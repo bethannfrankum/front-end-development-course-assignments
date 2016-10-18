@@ -1,0 +1,25 @@
+body {
+    background-color: rosybrown;}
+h1 {text-align: center;
+    color:#4d2600}
+img {
+    border-style: dotted;
+    color:teal;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;}
+
+
+
+
+
+
+border
+margins
+padding
+*background color on each image w/o using class
