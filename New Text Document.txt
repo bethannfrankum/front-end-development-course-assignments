@@ -1,12 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 test
 =======
 This is a test commit 2345678910 123 456 789
 >>>>>>> uagc-it-readiness/master
 =======
 This is a test commit 2345678910 123 456 789
+>>>>>>> uagc-it-readiness/master
+=======
+This is a test commit 2345678910 123
+Assignment 4
+  
 >>>>>>> uagc-it-readiness/master
 =======
 This is a test commit 2345678910 123
