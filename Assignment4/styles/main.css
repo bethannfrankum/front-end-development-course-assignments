@@ -33,3 +33,13 @@ hr  {clear:both;}
             width:20%;}
 .content-footer {border-top: 1px solid #000000;clear:both;
             padding: 10px;}
+.image-list2    {padding: 0;
+                margin: 0;
+                list-style: none;
+                }
+.image-list2 li {float: left;
+                 padding: 10px;
+                 margin: 10px;}
+.image-list2 img    {height:                          100px;
+                     width: 100px;}
+.image-list2 h4 {text-align:center;}
