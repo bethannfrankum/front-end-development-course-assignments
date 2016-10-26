@@ -1,1 +1,30 @@
+body {width:960px;
+    margin:auto;
+   font-family: Arial, Helvetica, sans-serif;}
+.title {background-color: #00aaaa;
+        padding:15px;
+        color:white;
+    text-shadow:  17px 8px 13px rgba(2,2,2, 1)}
+.title h2{color:white}
+.navigation {float:left;
+            padding:2%;
+            width:20%;
+           
+           }
+
+.navigation a{text-decoration: none;
+                color:#aa0000}
+.navigation h3{color:black}
+.ipsum { float:right;width:75%}
+
+
+.footer{clear:both}
+.ipsum h1,h2,h3 {color:#aa0000}
+.ipsum em{color:#55aa00}
+.ipsum a{color:#aa0000;
+        text-decoration: none}
+.ipsum ol{list-style-type: upper-roman}
+
+.image-list {list-style-image: none;
+            margin:0; padding:0;}
 
