@@ -16,6 +16,10 @@ header h2 {
     color: white;
     background-color: #00aaaa;
 }
+.article ol {list-style: lower-roman;}
+a:hover {
+  text-decoration: underline;
+}
 aside nav h1,
 h2 {
     color: white;
@@ -30,6 +34,7 @@ aside {
 }
 hr {
     clear: both;
+    border:none;
 }
 aside ul li {
     margin: 0;
@@ -48,11 +53,47 @@ aside h3 {
     float: right;
     width: 75%
 }
+.article em {color: #55aa00;}
+.article a{color:#aa0000;
+            font-weight: bold;
+            text-decoration: none;}
 .article h1,
 h2,
 h3 {
     color: #aa0000;
 }
+.image-list{list-style-image: none;
+    margin: 0;
+    padding: 0;}
+.gallery-image {
+    box-shadow: 10px 10px 5px #888888;}
+   
+.list-item {
+    float: left;
+    display: block;
+    padding: 8px;
+    margin: 10px;
+  }
+
+   
+
 footer {
-    clear: both
+    clear: both;
+    text-align: center;
+    
 }
+
+footer a{ text-decoration: none;
+    color: #aa0000;
+    padding: 8px;
+    margin: 20px;
+    font-weight: bold;
+  
+}
+
+footer ul {list-style-type: none;
+            
+            }
+footer li{display:inline;
+   
+          }
