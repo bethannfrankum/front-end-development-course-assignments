@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-* {
+<<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD * {
     box-sizing: border-box;
 }
 
@@ -43,28 +41,58 @@ header h1 {
     float: left;
 }
 
+section h1 {
+    padding: 6px;
+}
+
 hr {
     border: none;
     clear: both;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+img:hover {
+    border: 3px solid black;
+}
+
 .image-list {
-    margin: 0;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 25px;
     padding: 0;
+    text-align: center;
+}
+
+.image-list h6:hover {
+    text-decoration: underline;
+}
+
+h6 {
+    font-size: 20px;
 }
 
 .gallery-image {
     list-style: none;
     float: left;
     padding: 20px;
+    width: 20%;
 }
 
 .list-item {
     float: left;
     display: block;
-    padding: 8px;
+    padding: 15px;
     margin: 10px;
+    margin-top: 5px;
     text-align-last: center;
+}
+
+li a {
+    padding: 8px;
 }
 
 footer {
@@ -80,13 +108,17 @@ footer li {
 footer h1 {
     float: left;
 }
-=======
-* {
-    box-sizing:border-box;
+
+=======* {
+    box-sizing: border-box;
 }
->>>>>>> uagc-it-readiness/master
-=======
-* {
-    box-sizing:border-box;
+
+>>>>>>> uagc-it-readiness/master=======* {
+    box-sizing: border-box;
 }
+
+>>>>>>> uagc-it-readiness/master=======* {
+    box-sizing: border-box;
+}
+
 >>>>>>> uagc-it-readiness/master
