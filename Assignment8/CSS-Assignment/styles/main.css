@@ -80,8 +80,9 @@ img:hover {
 }
 
 h6 {
+    margin: 0;
+    padding: 13px;
     font-size: 20px;
-    padding: -20px;
 }
 
 .gallery-image {
