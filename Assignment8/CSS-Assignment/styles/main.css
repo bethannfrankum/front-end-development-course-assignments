@@ -47,9 +47,14 @@ hr {
 }
 
 .image-list {
-    list-style-image: none;
     margin: 0;
     padding: 0;
+}
+
+.gallery-image {
+    list-style: none;
+    float: left;
+    padding: 20px;
 }
 
 .list-item {
