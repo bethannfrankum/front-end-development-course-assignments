@@ -42,17 +42,27 @@ if (part6Number > 50) {
 document.getElementById('part6Number').innerHTML = part6Number;
 document.getElementById('part6Result').innerHTML = part6Result;
 
-/**
- *      Part 7
- */
+//////////////Part7
+
 var part7Number = getRandomNumber();
 
 var part7Result;
 if (part7Number < 25) {
-    part7Result = "Below 25"
+    part7Result = "Below 25";
 } else if (part7Number >= 25 && part7Number < 50) {
-    part7Result
+    part7Result = "Between 25 and 50";
+} else if (part7Number >= 50 && part7Number < 75) {
+    part7Result = "Between 50 and 75";
+} else if (part7Number > 75) {
+    part7Result = "Above 75";
 }
+document.getElementById('part7Number').innerHTML = part7Number;
+document.getElementById('part7Result').innerHTML = part7Result;
+
+
+/**
+ *      
+ */
 
 
 ////////////////////////////////////////////////////////////////
