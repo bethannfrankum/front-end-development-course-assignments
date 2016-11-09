@@ -1,3 +1,54 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0 auto;
+    width: 960px;
+}
+
+nav {
+    text-align: center;
+}
+
+.navigation1 nav {
+    background: #a00;
+    border-radius: 25px;
+}
+
+.navigation1 a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.mainpicture {
+    margin: 10px;
+}
+
+.biggestpic {
+    width: 66.66666%;
+    float: left;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.secondbiggest {
+    float: right width: 33%;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.secondbiggest2 {
+    float: right;
+    width: 33%;
 }
