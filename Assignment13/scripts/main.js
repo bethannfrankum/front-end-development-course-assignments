@@ -5,7 +5,7 @@ btn.addEventListener('click', submit);
 var btn2 = getE('btnReset');
 btn2.addEventListener('click', reset);
 
-var inputs = ['firstName', 'lastName', 'emailAddress', 'password', 'passwordConfirm']
+var inputs = ['firstName', 'lastName', 'emailAddress', 'password', 'passwordConfirm','timezone','terms']
 var ERROR_CLASS = 'invalid'
 
 function submit() {
@@ -32,6 +32,21 @@ function submit() {
     if (email.value.indexOf('@') == -1) {
         errorList.push('Enter a valid Email');
     }
+    var tim = getE('timezone');
+    if (tim.value === '') {
+        tim.classList.add(ERROR_CLASS);
+        errorList.push('Timezone is required');
+    } else {
+        tim.classList.remove(ERROR_CLASS);
+    }
+
+    var terms = getE('terms');
+    if (terms.checked === false) {
+
+        errorList.push('You must accept the terms and conditions');
+    }
+
+
 
     var html
     if (errorList.length > 0) {

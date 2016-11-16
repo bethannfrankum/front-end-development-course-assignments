@@ -37,7 +37,7 @@ function submit() {
     var tim = getE('timezone');
     if (tim.value === '') {
         tim.classList.add(ERROR_CLASS);
-        errorList.push('Timezone is required');
+        errorList.push('Time zone is required');
     } else {
         tim.classList.remove(ERROR_CLASS);
     }

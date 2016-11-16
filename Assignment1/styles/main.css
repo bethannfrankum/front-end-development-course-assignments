@@ -1,18 +1,24 @@
-html{
-}
+html {}
 
-
-body{
-    margin:20px auto;
+body {
+    margin: 20px auto;
     text-align: center;
-    width:960px;font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 960px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-h1 {color: blue;
-    font-size: 150%;}
+h1 {
+    color: blue;
+    font-size: 150%;
+}
 
-h2 {color: red;
-    font-size: 150%;}
+h2 {
+    color: red;
+    font-size: 150%;
+}
 
-h3 {color: purple;
-        font-size: 150%;}
+h3 {
+    color: purple;
+    font-size: 150%;
+}
+
