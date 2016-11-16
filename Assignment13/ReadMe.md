@@ -1,36 +1,59 @@
-# Assignment 13 
+# Assignment 12 
 
-Today we are going to perform an exercise that will involve enhancing an existing page with new elements.
+In today's assignment you are going to be recreating the form that can be found here: [https://worthyd.github.io/dummy-sites/simple-forms/](https://worthyd.github.io/dummy-sites/simple-forms/)
 
-Finish Assignment 12 and copy your final product into this folder.
-
-Your final result should look and behave similar to this [https://worthyd.github.io/dummy-sites/simple-forms-1/](https://worthyd.github.io/dummy-sites/simple-forms-1/)
-
-Take things one step at a time.
+Focus on the HTML first, then the JavaScript and then work on the CSS.
 
 ## HTML
-Wrap the form with a `form` tag. It does not need to have any attributes set.
+Use what we have learned today to make this form.  It needs to have the following *text* `inputs`.
 
-Add a `select` input to represent the user's time zone.  It needs to have the following values.
+- First Name
+- Last Name
+- Email
 
-- An empty value
-- Eastern
-- Central
-- Mountain
-- Pacific
+It also needs two *password* `inputs`
 
-Add a `textarea` that will represent a user's 'About Me' section.
+- Password
+- Confirm Password
 
-Add a checkbox `input` for 'Accept Terms and Conditions'
+Each element needs to have the following attributes filled out
 
+- type
+- name
+- id
+- placeholder
+
+Each input also needs to have a corresponding label associated to it.
+
+Add two `buttons` with the `type` set to `button` to the bottom of the document. That will represent the following actions.  **Make sure to use the `type` of `button` even though you may be tempted to use `submit` or `reset`**
+
+- Submit
+- Reset
 
 ## JavaScript
-Add the following functionality:
+Perform the following actions
+- Add a click event listener to your submit button. Make a function the will execute when the button is clicked.
+- Add a click event listener to your reset button. Make a function the will execute when the button is clicked.
 
-- A timezone must be selected
-- The 'About' textarea must be selected.
-- The 'Accept Terms and Conditions' must be checked
+In your function for submitting the information, write code to check the following conditions.
 
-## CSS Challenge
+- First Name is filled out
+- Last Name is filled out
+- Email is Filled out
+- Email contains an '@' sign
+- Password is filled out
+- Confirm Passowrd is filled out
 
-Try to find out how to change the color of the placeholder text and make them #ff0000 when they are invalid.
+Build an array of error messages to display to the user when a rule is violated
+
+Add a custom CSS class to the input element when it is invalid.  
+Remove the class if it is valid.
+
+Display a success message if all the fields are filled out properly
+
+
+## CSS
+Style the form as you see fit, but it must meet the following requirments
+
+- Any error messages must be a different color than black
+- Invalid inputs must have a different border and background color than a valid input.

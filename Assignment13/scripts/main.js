@@ -8,7 +8,6 @@ btn2.addEventListener('click', reset);
 var inputs = ['firstName', 'lastName', 'emailAddress', 'password', 'passwordConfirm']
 var ERROR_CLASS = 'invalid'
 
-
 function submit() {
     var elm;
     var errorList = [];
@@ -33,20 +32,6 @@ function submit() {
     if (email.value.indexOf('@') == -1) {
         errorList.push('Enter a valid Email');
     }
-    console.log(email.value);
-    var tim = getE('timezone');
-    if (tim.value === '') {
-        tim.classList.add(ERROR_CLASS);
-        errorList.push('Timezone is required');
-    } else {
-        tim.classList.remove(ERROR_CLASS);
-    }
-
-    var terms = getE('terms').checked;
-    if (terms === false) {
-
-        errorList.push('You must accept the terms and conditions');
-    }
 
     var html
     if (errorList.length > 0) {
@@ -66,13 +51,9 @@ function reset() {
         elm.classList.remove(ERROR_CLASS);
     }
 
-    {
-        getE('messages').innerHTML = '';
+    getE('messages').innerHTML = '';
+}
 
-        getE('timezone').value = '';
-        getE('terms').checked = false;
-    }
-
-    function getE(id) {
-        return document.getElementById(id);
-    }
+function getE(id) {
+    return document.getElementById(id);
+}
