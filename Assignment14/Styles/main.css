@@ -87,9 +87,9 @@ input[type="color" i][list] {
     border-image: initial;
 }
 
-input[type="checkbox"] {
+.check-group {
     display: inline-block;
-    width: 3%;
+    width: auto;
 }
 
 user agent stylesheet select:not(:-internal-list-box) {
