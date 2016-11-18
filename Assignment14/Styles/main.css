@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 500px;
+    width: 960px;
     margin: 20px auto;
     font-size: 20px;
 }
@@ -17,13 +17,27 @@ body {
     background: #ff9191;
 }
 
+.column {
+    width: 49%;
+    float: left;
+}
+
+input[type="search" i] {
+    padding: 1px;
+}
+
+user agent stylesheet input[type="search" i] {
+    -webkit-appearance: searchfield;
+    box-sizing: border-box;
+}
+
 .input-group,
 .check-group {
     padding: 20px;
 }
 
 .check-group {
-    display: inline-block
+    display: inline-block;
 }
 
 .input-group input,
@@ -97,12 +111,12 @@ user agent stylesheet select {
     border-image: initial;
 }
 
-user agent stylesheet keygen,
+keygen,
 select {
     border-radius: 5px;
 }
 
-user agent stylesheet input,
+input,
 textarea,
 keygen,
 select,
