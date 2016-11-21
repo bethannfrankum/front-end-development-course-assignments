@@ -14,10 +14,7 @@ body {
 article {
     text-align: left;
     display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    font-size: 20px;
 }
 
 h1,
@@ -29,17 +26,17 @@ h2 {
 h1 {
     display: block;
     font-size: 2em;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
     font-weight: 100;
+}
+
+.pt2 h1 {
+    padding: 20px;
 }
 
 h2 {
     font-style: italic;
     font-weight: 200;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .heading {
@@ -52,10 +49,12 @@ h2 {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -10px;
     color: white;
 }
 
 .pt2 {
+    padding-right: 1em;
     color: black;
     text-align: center;
 }
@@ -100,31 +99,53 @@ ul {
 
 .bottomnav a {
     float: left;
-    font-weight: 100;
     padding: 10px 20px;
     text-decoration: none;
     color: black;
 }
 
 .bottomnav {
-    background-color: gray;
-}
-
-.bottomnav a {
-    text-decoration: none;
+    background-color: grey;
 }
 
 .pt2 .info img {
     float: left;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.formdiv {
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field {
+    margin: 5px;
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    float: right;
+    height: 2em;
+    width: 60%
 }
 
 form {
-    text-align: left;
+    clear: both;
+    text-align: center;
     color: black;
 }
 
+label {
+    float: left;
+}
+
 .check {
-    text-align: center
+    clear: both;
+    text-align: center;
 }
 
 .bttn {
