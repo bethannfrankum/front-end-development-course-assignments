@@ -1,63 +1,62 @@
 document.getElementById('btnSubmit').addEventListener('click', submit);
 
 function submit() {
-    var btn = getElm('btnSubmit');
-    btn.addEventListener('click', update);
-    var errClass = "invalid";
-    //creates empty array for our array messages
-    var errorMsg = [];
-    //get the firstName element
-    var firstName = getElm('firstName');
-    //Check to see if first name is empty
+    var error = [];
+    var errorClass = "errors";
     if (firstName.value === '') {
-        //Add our error message to the array
-        errorMsg.push('First Name is required');
-        //Add an error class to our input
-        firstName.classList.add(errClass);
-    }
-    var lastName = getElm('lastName');
-    if (lastName.value === '') {
-        errorMsg.push('Last Name is required');
-        lastName.classList.add(errClass);
-    }
-    var email = getElm('emailAddress');
-    if (email.value === '') {
-        errorMsg.push('Email is required');
-        email.classList.add(errClass);
-        //Check to see if our input contains @ or .com
-    }
-    else if (email.value.indexOf('@') == -1 || email.value.indexOf('.com') == -1) {
-        errorMsg.push('A Valid Email is required');
-        email.classList.add(errClass);
-    }
-    //Do we have any error messages?
-    if (errorMsg.length > 0) {
-        //Create a variable for our html messages
-        var html = '';
-        //Loop through and add each message to our html variable
-        for (var i = 0; i < errorMsg.length; i++) {
-            //html += errorMsg[i] + '<br />';            
-            html = html + errorMsg[i] + '<br />';
-        }
-        //Update our html with new string
-        getElm('errors').innerHTML = html;
+        error.push("First name was left blank");
+        firstName.classList.add(errorClass);
     }
     else {
-        //Everything checked out. Display a thank you message
-        getElm('errors').innerHTML = "Thank you for submitting your information";
+        firstName.classList.remove(errorClass);
     }
-}
-var resetBtn = getElm('btnReset');
-resetBtn.addEventListener('click', reset);
-
-function reset() {
-    var inputIdArray = ['firstName', 'lastName', 'emailAddress']
-        //Loop through all inputs and reset their value
-    for (var i = 0; i < inputIdArray.length; i++) {
-        getElm(inputIdArray[i]).value = '';
+    if (lastName.value === '') {
+        error.push("Last name was left blank");
+        lastName.classList.add(errorClass);
     }
-}
-/////////////////
-function getElm(id) {
-    return document.getElementById(id);
+    else {
+        lastName.classList.remove(errorClass);
+    }
+    if (emailAddress.value === '') {
+        error.push("Email address was left blank");
+        emailAddress.classList.add(errorClass);
+    }
+    else {
+        emailAddress.classList.remove(errorClass);
+    }
+    if (how.value < 1) {
+        error.push("You forgot to select how you heard about us");
+        how.classList.add(errorClass);
+    }
+    else {
+        how.classList.remove(errorClass);
+    }
+    if (why.value === '') {
+        error.push("You forgot to tell us why you deserve this amazing blender");
+        why.classList.add(errorClass);
+    }
+    else {
+        why.classList.remove(errorClass);
+    }
+    if (terms.checked === false) {
+        error.push("Not so fast! You must swear to our terms.");
+        terms.classList.add(errorClass);
+    }
+    else {
+        terms.classList.remove(errorClass);
+    }
+    if (emailAddress.value.indexOf("@") < 0 || emailAddress.value.indexOf(".com") < 0) {
+        console.log("invalid");
+    }
+    else {
+        console.log("valid");
+    }
+    var output;
+    if (error.length > 0) {
+        output = "<ul><li>" + error.join("</li><li>") + "</li></ul>";
+    }
+    else {
+        output = "<h1>Thank you!</h1>";
+    }
+    document.getElementById("error-list").innerHTML = output;
 }

@@ -33,7 +33,7 @@
         </div>
         <div class=formdiv>
             <form>
-                <div class="errors"> </div>
+                <div id="error-list" class="errors"> </div>
                 <div class="field">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" placeholder="Enter first name here" required> </div>
@@ -45,10 +45,10 @@
                     <input type="text" id="emailAddress" placeholder="Enter email address here" required> </div>
                 <div class="field">
                     <label for="find">How did you find us?</label>
-                    <select name="" id="find" placeholder="Tell us how you heard about our company here" required>
-                        <option value=""></option>
-                        <option>Word of mouth</option>
-                        <option>Facebook</option>
+                    <select name="find" id="how" placeholder="Tell us how you heard about our company here" required>
+                        <option value="0"></option>
+                        <option value="1">Word of mouth</option>
+                        <option value="2">Facebook</option>
                     </select>
                 </div>
                 <div class="field">
@@ -60,7 +60,7 @@
                         <input type="checkbox" id="terms" required>By checking this box you swear to our terms and conditions.</label>
                 </div>
                 <div class="bttn">
-                    <button id="btnSubmit" type="submit">Submit</button>
+                    <button id="btnSubmit" type="button">Submit</button>
                     <button id="btnReset" type="reset">Reset</button>
                 </div>
             </form>

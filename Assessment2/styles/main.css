@@ -17,6 +17,12 @@ article {
     font-size: 20px;
 }
 
+.errors {
+    list-style-type: disc;
+    color: #a00;
+    margin - left: 30 px
+}
+
 h1,
 h2 {
     padding: 0px;
@@ -96,6 +102,7 @@ ul {
     margin-right: 10px;
     padding: 8px 0;
 }
+
 .s input {
     background-color: #a00;
     border-style: none;
@@ -138,12 +145,16 @@ textarea {
     padding: 10px;
     border: 1px solid #a00;
 }
-form .field input, select {
-        font-size: 18px;
+
+form .field input,
+select {
+    font-size: 18px;
 }
+
 textarea {
     height: 3.5em;
 }
+
 select {
     color: #a00;
 }
@@ -175,6 +186,7 @@ label {
     text-align: center;
     margin: 2em;
 }
+
 .bttn button {
     font-size: 18px;
 }
