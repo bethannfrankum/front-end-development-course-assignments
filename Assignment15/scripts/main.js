@@ -28,8 +28,12 @@ $(document).ready(function () {
     ////Part 5
     $('#btnCopyValues').on('click', update5)
 
+<<<<<<< HEAD
     function update5() {
         var copiedValue = $('#copy-text').val();
         $('#paste-text').val(copiedValue);
     }
 });
+=======
+});
+>>>>>>> refs/remotes/uagc-it-readiness/master
