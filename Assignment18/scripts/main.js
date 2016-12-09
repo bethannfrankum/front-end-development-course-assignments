@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('input, textarea').on('blur', function () {
         var input = $(this);
-        validateRequiredInput(input)
+        validateRequiredInput(input);
         if (input.data('isemail') === true) {
             validateEmail(input);
         }
@@ -13,7 +13,7 @@ $(document).ready(function () {
         validateAllInputs();
     });
     $('#btnReset').on('click', function () {
-        var allInputs = $('input, textarea')
+        var allInputs = $('input, textarea');
         allInputs.val('');
         allInputs.removeClass('invalid');
         $('.error').hide();
@@ -28,7 +28,7 @@ $(document).ready(function () {
 function validateRequiredInput(input) {
     var val = input.val();
     //Find the required input span.
-    var msgSpan = input.find('.requiredMsg');
+    var msgSpan = input.closest('.input-group').find('.requiredMsg');
     if (val === '') {
         msgSpan.fadeIn();
         input.addClass('invalid');
@@ -48,13 +48,13 @@ function validateEmail(email) {
     var emailErrorMsg = email.closest('.input-group').find('.emailMsg');
     //Only validate if it is filled out
     if (emailValue !== '') {
-        if (emailValue.indexOf('@') === -1 && emailValue.indexOf('@') === -1) {
+        if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.com') === -1) {
             emailErrorMsg.fadeOut();
-            email.removeClass('invald');
+            email.removeClass('invalid');
         }
         else {
             emailErrorMsg.fadeIn();
-            email.addClass('invald');
+            email.addClass('invalid');
         }
     }
 }
@@ -66,20 +66,19 @@ function validatePassword() {
     var passwordValue = password.val();
     var passwordConfirm = $('#passwordConfirm');
     var passwordConfirmValue = passwordConfirm.val();
-    //Only validate if both are filled out
-    // if (passwordValue !== '' && passwordConfirmValue !== '') {
-    var passwordErrorMsg = password.closest('.input-group').find('.matchingMsg');
-    if (passwordValue !== passwordConfirmValue) {
-        passwordErrorMsg.show();
-        password.addClass('invalid');
-        passwordConfirm.addClass('invalid');
+    if (passwordValue !== '' && passwordConfirmValue !== '') {
+        var passwordErrorMsg = password.closest('.input-group').find('.matchingMsg');
+        if (passwordValue !== passwordConfirmValue) {
+            passwordErrorMsg.show();
+            password.addClass('invalid');
+            passwordConfirm.addClass('invalid');
+        }
+        else {
+            passwordErrorMsg.hide();
+            password.removeClass('invalid');
+            passwordConfirm.removeClass('invalid');
+        }
     }
-    else {
-        passwordErrorMsg.hide();
-        password.removeClass('invalid');
-        passwordConfirm.removeClass('invalid');
-    }
-    //}
 }
 
 function validateAllInputs() {
@@ -106,3 +105,4 @@ function validateAllInputs() {
         });
     }
 }
+main();
