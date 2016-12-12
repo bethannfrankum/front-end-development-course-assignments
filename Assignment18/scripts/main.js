@@ -48,7 +48,7 @@ function validateEmail(email) {
     var emailErrorMsg = email.closest('.input-group').find('.emailMsg');
     //Only validate if it is filled out
     if (emailValue !== '') {
-        if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.com') === -1) {
+        if (emailValue.indexOf('@') !== -1 && emailValue.indexOf('.com') !== -1) {
             emailErrorMsg.fadeOut();
             email.removeClass('invalid');
         }
