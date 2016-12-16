@@ -2,3 +2,15 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 960px
+}
+
+nav {
+    border: 1px solid black;
+    text-align: center;
+}
+
+img {
+    border: 1px solid black
+}
