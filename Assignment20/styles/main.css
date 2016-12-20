@@ -17,6 +17,15 @@ nav {
     text-align: center;
 }
 
+nav li {
+    padding: 5px;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
 .page-heading img {
     border: 1px solid black
 }
@@ -64,9 +73,10 @@ p {
 }
 
 .ans {
-    width: 50%;
+    margin: 5px;
+    width: 47%;
     float: left;
-    border: 1px, solid black;
+    border: 1px solid black;
 }
 
 p {
@@ -85,8 +95,8 @@ article {
 }
 
 section img {
-    margin-top: -18px;
-    margin-left: 550px;
+    margin-top: -40px;
+    margin-left: 500px;
 }
 
 h4 {
@@ -96,6 +106,23 @@ h4 {
 }
 
 .activity {
+    padding-left: 50px;
     width: 50%;
     float: right;
+}
+
+.submit {
+    width: 50%;
+    float: left;
+    margin: 5px;
+    border: 1px solid black;
+    clear: left;
+}
+
+input {
+    margin: 5px;
+}
+
+textarea {
+    margin: 5px;
 }
