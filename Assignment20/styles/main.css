@@ -4,7 +4,7 @@
 
 .main-content {
     padding: 5px;
-    width: 960;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ p {
 
 .ans {
     margin: 5px;
-    width: 47%;
+    width: 70%;
     float: left;
     border: 1px solid black;
 }
@@ -90,13 +90,13 @@ section {
 }
 
 article {
-    width: 75%;
+    width: 90%;
     padding: 15px;
 }
 
 section img {
     margin-top: -40px;
-    margin-left: 500px;
+    margin-left: 300px;
 }
 
 h4 {
@@ -106,8 +106,8 @@ h4 {
 }
 
 .activity {
-    padding-left: 50px;
-    width: 50%;
+    padding-left: -20px;
+    width: 20%;
     float: right;
 }
 
