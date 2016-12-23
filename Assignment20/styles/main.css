@@ -87,16 +87,12 @@ section {
     border: 1px solid black;
     padding: 10px;
     margin: 5px;
+    overflow: auto;
 }
 
 article {
     width: 90%;
     padding: 15px;
-}
-
-section img {
-    margin-top: -40px;
-    margin-left: 300px;
 }
 
 h4 {
@@ -125,4 +121,13 @@ input {
 
 textarea {
     margin: 5px;
+}
+
+.nameplate {
+    float: right;
+}
+
+.nameplate h4 {
+    margin-top: 8px;
+    margin-right: 15px;
 }
