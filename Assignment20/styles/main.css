@@ -28,17 +28,25 @@ h4 {
 
 nav {
     border: 1px solid #5a5a5a;
+    border-radius: 10px;
     text-align: center;
     margin-bottom: 5px;
+    background-color: #aa0000;
+}
+
+ul {
+    margin-bottom: -10px;
 }
 
 nav li {
-    padding: 5px;
+    padding: 25px;
     display: inline;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 a {
-    text-decoration: none;
+    color: white;
 }
 
 .page-heading img {
@@ -47,6 +55,7 @@ a {
 
 .question {
     border: 1px solid #5a5a5a;
+    border-radius: 10px;
     float: left;
 }
 
@@ -57,6 +66,7 @@ a {
     margin-bottom: 20px;
     margin-right: 75px;
     border: 1px solid #5a5a5a;
+    border-radius: 10px;
 }
 
 .eddie img {
@@ -74,7 +84,6 @@ a {
 }
 
 h2 {
-    padding-top: 20px;
     padding-left: 30px;
 }
 
@@ -96,6 +105,7 @@ p {
     width: 70%;
     float: left;
     border: 1px solid #5a5a5a;
+    border-radius: 10px;
 }
 
 p {
@@ -104,6 +114,7 @@ p {
 
 section {
     border: 1px solid #5a5a5a;
+    border-radius: 10px;
     padding: 10px;
     margin: 5px;
     overflow: auto;
@@ -132,6 +143,7 @@ h4 {
     margin: 5px;
     border: 1px solid #5a5a5a;
     clear: left;
+    border-radius: 10px;
 }
 
 input {
@@ -145,6 +157,7 @@ textarea {
 }
 
 .submitheading {
+    padding-top: 10px;
     font-weight: bold;
     font-size: 20px;
     color: #620010;
@@ -161,5 +174,28 @@ textarea {
 }
 
 .control-panel {
-    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    border text-align: center;
+}
+
+h5 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #620010;
+    padding-left: 5px;
+}
+
+.controls {
+    padding-top: 10px;
+    margin-left: 150px;
+    padding-bottom: 15px;
+}
+
+.controls button {
+    background-color: #620010;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
 }
