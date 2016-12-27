@@ -3,6 +3,7 @@
 }
 
 .main-content {
+    font-family: Roboto;
     padding: 5px;
     width: 960px;
     margin: 0 auto;
@@ -12,9 +13,23 @@ body {
     margin: 0;
 }
 
+p,
+article,
+.activity,
+.submit {
+    color: #5a5a5a;
+}
+
+h2,
+h3,
+h4 {
+    color: #620010
+}
+
 nav {
-    border: 1px solid black;
+    border: 1px solid #5a5a5a;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 nav li {
@@ -27,11 +42,11 @@ a {
 }
 
 .page-heading img {
-    border: 1px solid black
+    border: 1px solid #5a5a5a;
 }
 
 .question {
-    border: 1px solid black;
+    border: 1px solid #5a5a5a;
     float: left;
 }
 
@@ -41,7 +56,7 @@ a {
     padding-right: 20px;
     margin-bottom: 20px;
     margin-right: 75px;
-    border: 1px solid black;
+    border: 1px solid #5a5a5a;
 }
 
 .eddie img {
@@ -67,6 +82,10 @@ h3 {
     padding-left: 10px;
 }
 
+h4 {
+    padding-left: 5px;
+}
+
 p {
     width: 50%;
     padding-left: 30px;
@@ -76,7 +95,7 @@ p {
     margin: 5px;
     width: 70%;
     float: left;
-    border: 1px solid black;
+    border: 1px solid #5a5a5a;
 }
 
 p {
@@ -84,7 +103,7 @@ p {
 }
 
 section {
-    border: 1px solid black;
+    border: 1px solid #5a5a5a;
     padding: 10px;
     margin: 5px;
     overflow: auto;
@@ -111,16 +130,25 @@ h4 {
     width: 50%;
     float: left;
     margin: 5px;
-    border: 1px solid black;
+    border: 1px solid #5a5a5a;
     clear: left;
 }
 
 input {
+    width: 60%;
     margin: 5px;
 }
 
 textarea {
+    width: 80%;
     margin: 5px;
+}
+
+.submitheading {
+    font-weight: bold;
+    font-size: 20px;
+    color: #620010;
+    text-align: center;
 }
 
 .nameplate {
@@ -130,4 +158,8 @@ textarea {
 .nameplate h4 {
     margin-top: 8px;
     margin-right: 15px;
+}
+
+.control-panel {
+    text-align: center;
 }

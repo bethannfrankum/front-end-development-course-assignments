@@ -4,7 +4,19 @@
 <head>
     <title>Assignment 18</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css"> </head>
+    <link rel="stylesheet" href="styles/main.css">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
 
 <body>
     <div class="main-content">
@@ -14,7 +26,9 @@
                 <li><a href="default.asp">Home</a></li>
                 <li><a href="qaa.asp">Q and A</a></li>
                 <li><a href=https://twitter.com/HalluxInc>Twitter</a></li>
-                <li><a href="https://www.facebook.com/HalluxInc/">Facebook</a></li>
+                <li>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+                </li>
             </ul>
         </nav>
         <div class="ask">
@@ -46,21 +60,26 @@
                     <h4>Clark Griswold</h4> </section>
             </section>
             </div>
-        </div>
-        <div class="activity">
-            <h2>Activity Log</h2>
-            <ul id="logs">
-                <li>Buzz McCallister responded</li>
-                <li>Myron Larabee responded</li>
-                <li>Clark Griswold responded</li>
-            </ul>
-        </div>
-        <div class="submit">
-            <h2>Submit Your Answer</h2>
-            <h2>Your Name</h2>
-            <input type="text" id="name">
-            <h2>Your Answer</h2>
-            <textarea id="yourAnswer"></textarea>
+            <div class="activity">
+                <h2>Activity Log</h2>
+                <ul id="logs">
+                    <li>Buzz McCallister responded</li>
+                    <li>Myron Larabee responded</li>
+                    <li>Clark Griswold responded</li>
+                </ul>
+            </div>
+            <div class="submit">
+                <div class="submitheading" <h2>Submit Your Answer</h2>
+                </div>
+                <h3>Your Name:</h3>
+                <input type="text" id="name">
+                <h3>Your Answer:</h3>
+                <textarea id="yourAnswer"></textarea>
+                <div class="control-panel">
+                    <button id="btnSubmit" type="button">Submit</button>
+                    <button id="btnReset" type="button">Reset</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
