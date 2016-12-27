@@ -3,6 +3,7 @@
 }
 
 .main-content {
+    background-color: white;
     font-family: Roboto;
     padding: 5px;
     width: 960px;
@@ -10,6 +11,7 @@
 }
 
 body {
+    background-color: #e7e7e7;
     margin: 0;
 }
 
@@ -29,13 +31,9 @@ h4 {
 nav {
     border: 1px solid #5a5a5a;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 5px;
     background-color: #aa0000;
-}
-
-ul {
-    margin-bottom: -10px;
 }
 
 nav li {
@@ -91,7 +89,9 @@ h2 {
 }
 
 h3 {
-    padding-left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h4 {
@@ -104,7 +104,9 @@ p {
 }
 
 .ans {
-    margin: 5px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    background-color: white;
     width: 70%;
     float: left;
     border: 1px solid #5a5a5a;
@@ -136,38 +138,16 @@ h4 {
 }
 
 .activity {
+    background-color: white;
     padding-left: -20px;
     width: 20%;
     float: right;
 }
 
-.submit {
-    width: 50%;
-    float: left;
-    margin: 5px;
-    border: 1px solid #5a5a5a;
-    clear: left;
-    border-radius: 10px;
-    background-color: #e7e7e7;
-}
-
-input {
-    width: 60%;
-    margin: 5px;
-}
-
-textarea {
-    width: 80%;
-    margin: 5px;
-}
-
-.submitheading {
-    padding-top: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    color: #620010;
-    text-align: center;
-    margin-bottom: 5px;
+.answer-form h3 {
+    font-size: 24px;
+    margin-top: -25px;
+    margin-bottom: -15px;
 }
 
 .nameplate {
@@ -187,25 +167,33 @@ textarea {
     border-radius: 25px;
 }
 
-.control-panel {
-    padding-bottom: 15px;
-    padding-top: 5px;
-    border text-align: center;
+.answer-form {
+    width: 50%;
+    margin: 10px auto;
+    padding-top: 20px;
+    clear: both;
 }
 
-h5 {
-    font-size: 17px;
-    font-weight: bold;
+.input-group {
+    clear: both;
+    margin: 10px 0;
+}
+
+.input-group label {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
     color: #620010;
-    padding-left: 5px;
-    margin-bottom: 5px;
-    margin-top: 2px;
+}
+
+.input-group input,
+.input-group textarea {
+    display: block;
+    width: 100%
 }
 
 .controls {
-    padding-top: 10px;
-    margin-left: 150px;
-    padding-bottom: 15px;
+    text-align: center;
 }
 
 .controls button {
@@ -214,4 +202,14 @@ h5 {
     padding: 10px;
     font-size: 16px;
     border: none;
+}
+
+.controls button:hover {
+    background-color: #aa0000;
+}
+
+.error {
+    color: #f00;
+    font-weight: bold;
+    display: none;
 }

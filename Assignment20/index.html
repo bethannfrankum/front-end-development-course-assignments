@@ -26,9 +26,7 @@
                 <li><a href="default.asp">Home</a></li>
                 <li><a href="qaa.asp">Q and A</a></li>
                 <li><a href=https://twitter.com/HalluxInc>Twitter</a></li>
-                <li>
-                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-                </li>
+                <li><a href="facebook.asp">Facebook</a></li>
             </ul>
         </nav>
         <div class="ask">
@@ -43,7 +41,7 @@
             </div>
         </div>
         <div class="ans">
-            <h2>Answers</h2>
+            <h2>Best Answers</h2>
             <section>
                 <article>"No, for three reasons: A, I'm not that lucky. Two, we use smoke detectors and D, we live on the most boring street in the whole United States of America, where nothing even remotely dangerous will ever happen. Period." </article>
                 <div class="nameplate"> <img src="images/Buzz.jpg" width="55px" />
@@ -68,18 +66,21 @@
                     <li>Clark Griswold responded</li>
                 </ul>
             </div>
-            <div class="submit">
-                <div class="submitheading" <h2>Submit Your Answer</h2>
-                </div>
-                <h5>Your Name:</h5>
-                <input type="text" id="name">
-                <h5>Your Answer:</h5>
-                <textarea type=t ext id="yourAnswer"></textarea>
-                <div class="controls">
-                    <button id="btnSubmit" type="button">Submit</button>
-                    <button id="btnReset" type="button">Reset</button>
-                </div>
-            </div>
+            <section class="answer-form">
+                <h3>Submit Your Answer</h3>
+                <form action="">
+                    <div class="input-group">
+                        <label for="">Name</label>
+                        <input type="text" id="name"> <span class="error error-name">Name is required.</span> </div>
+                    <div class="input-group">
+                        <label for="">Answer</label>
+                        <textarea name="" id="answer"> </textarea> <span class="error error-answer">Answer is required.</span> </div>
+                    <div class="controls">
+                        <button id="btnSubmit" type="button">Submit</button>
+                        <button id="btnReset" type="reset">Reset</button>
+                    </div>
+                </form>
+            </section>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
