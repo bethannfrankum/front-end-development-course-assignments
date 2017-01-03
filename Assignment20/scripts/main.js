@@ -4,6 +4,7 @@ $(document).ready(function () {
     //I'm going to use function names so I can reuse them later
     $('#name').on('blur', validateName);
     $('#answer').on('blur', validateAnswer);
+    $('.newForm').hide();
 
     function errorMessage() {
         var input = $(input);
@@ -16,21 +17,16 @@ $(document).ready(function () {
     }
     //Register button click events
     $('#btnSubmit').on('click', function () {
-        console.log('Success');
-    });
-    $('#btnReset').on('click', function () {
-        var allInputs = $('input, textarea')
-        allInputs.val('');
-        allInputs.removeClass('invalid');
-        $('.error').hide();
-        $('#messages').html('');
+        var isValidName = validateName();
+        var isValidAnswer = validateAnswer();
+        //Add an if statement and only execute this block if both variables are set to true
+        $('.newForm').show();
     });
     //checks to see if an name is filled out and 
     //shows an error message if it is not
     function validateName() {
         var nameElm = $('#name');
         var nameElmVal = nameElm.val();
-        console.log(nameElmVal);
         var nameErrorMsg = nameElm.closest('.input-group').find('.error-name');
         if (nameElmVal === '') {
             nameErrorMsg.show();
@@ -38,7 +34,8 @@ $(document).ready(function () {
         }
         else {
             nameErrorMsg.hide();
-            nameElm.removeClass('invalid')
+            nameElm.removeClass('invalid');
+            $('.newForm').hide();
         }
     }
     //checks to see if an answer is filled out and 
@@ -46,15 +43,16 @@ $(document).ready(function () {
     function validateAnswer() {
         var answerElm = $('#answer');
         var answerElmVal = answerElm.val();
-        console.log(answerElmVal);
         var answerErrorMsg = answerElm.closest('.input-group').find('.error-answer');
         if (answerElmVal === '') {
             answerErrorMsg.show();
             answerElm.addClass('invalid');
+            return false;
         }
         else {
-            answerElmMsg.hide();
+            answerErrorMsg.hide();
             answerElm.removeClass('invalid');
+            return true;
         }
     }
     //Clears our inputs and hides all error messages
