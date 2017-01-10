@@ -1,4 +1,4 @@
-    body,
+body,
     ul {
         padding: 0
     }
@@ -82,9 +82,12 @@
     }
     
     @media screen and (max-width:480px) {
-        //.image-gallery li {width:100%;}
-        nav li {
-            display: block;
-            padding: 10px 0;
-        }
+        //.image-gallery li {
+        width: 100%;
     }
+    
+    nav li {
+        display: block;
+        padding: 10px 0;
+    }
+}
