@@ -62,9 +62,32 @@ section {
     width: 25%
 }
 
-
 .image-gallery li:hover img {
     border: 2px solid #333;
     display: block;
     margin: 0 auto
+}
+
+@media screen and (min-width:320px) and (max-width:1366px) {
+    body {}
+}
+
+@media screen and (min-width:320px) and (max-width:1366px) {
+    .container li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:1366px) {
+    .image-gallery li {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    p {}
+}
+
+@media screen and (min-width:960px) {
+    p {}
 }
