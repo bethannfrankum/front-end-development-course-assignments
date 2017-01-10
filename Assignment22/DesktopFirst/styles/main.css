@@ -1,93 +1,90 @@
-body,
-ul {
-    padding: 0
-}
-
-a,
-nav li {
-    display: inline-block
-}
-
-* {
-    box-sizing: border-box
-}
-
-body {
-    margin: 0
-}
-
-a {
-    color: #fff;
-    text-decoration: none
-}
-
-.image-gallery li:hover h3,
-a:hover {
-    text-decoration: underline
-}
-
-header {
-    background: #a00
-}
-
-footer {
-    background: #333;
-    clear: both
-}
-
-ul {
-    list-style: none
-}
-
-nav ul {
-    margin: 0;
-    padding: 20px 10px;
-    font-size: 20px
-}
-
-nav li a {
-    padding-right: 20px
-}
-
-footer nav,
-header nav,
-section {
-    width: 960px;
-    margin: 0 auto
-}
-
-.image-gallery li {
-    float: left;
-    text-align: center;
-    width: 25%
-}
-
-.image-gallery li:hover img {
-    border: 2px solid #333;
-    display: block;
-    margin: 0 auto
-}
-
-@media screen and (min-width:320px) and (max-width:1366px) {
-    body {}
-}
-
-@media screen and (min-width:320px) and (max-width:1366px) {
-    .container li {
-        width: 100%;
+    body,
+    ul {
+        padding: 0
     }
-}
-
-@media screen and (min-width:320px) and (max-width:1366px) {
+    
+    a,
+    nav li {
+        display: inline-block
+    }
+    
+    * {
+        box-sizing: border-box
+    }
+    
+    body {
+        margin: 0;
+        max-width: 1400px;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none
+    }
+    
+    .image-gallery li:hover h3,
+    a:hover {
+        text-decoration: underline
+    }
+    
+    header {
+        background: #a00
+    }
+    
+    footer {
+        background: #333;
+        clear: both
+    }
+    
+    ul {
+        list-style: none
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 20px 10px;
+        font-size: 20px
+    }
+    
+    nav li a {
+        padding-right: 20px
+    }
+    
+    footer nav,
+    header nav,
+    section {
+        width: 960px;
+        margin: 0 auto
+    }
+    
     .image-gallery li {
-        width: 50%;
+        float: left;
+        text-align: center;
+        width: 25%
     }
-}
-
-@media screen and (max-width:500px) {
-    p {}
-}
-
-@media screen and (min-width:960px) {
-    p {}
-}
+    
+    .image-gallery li:hover img {
+        border: 2px solid #333;
+        display: block;
+        margin: 0 auto
+    }
+    
+    @media screen and (max-width:960px) {
+        section h1 {
+            padding-left: 10px;
+        }
+    }
+    
+    @media screen and (max-width:640px) {
+        .image-gallery li {
+            width: 33.3333%
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        //.image-gallery li {width:100%;}
+        nav li {
+            display: block;
+            padding: 10px 0;
+        }
+    }
