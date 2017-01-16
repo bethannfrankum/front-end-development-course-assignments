@@ -54,11 +54,18 @@ body {
     .hero {
         width: 100%
     }
+    .md-100 {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:992px) {
     .lg-25 {
         width: 25%;
+    }
+    .lg-50 {
+        width: 50%;
+        clear: right;
     }
     /*.row {
         clear: both;
