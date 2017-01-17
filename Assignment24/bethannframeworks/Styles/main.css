@@ -5,11 +5,20 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .cell {
     border: 1px solid black;
     background: lightgrey;
+}
+
+.features {
+    text-align: left;
+}
+
+.hero {
+    width: 575px;
 }
 
 
