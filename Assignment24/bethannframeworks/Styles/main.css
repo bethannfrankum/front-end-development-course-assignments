@@ -33,10 +33,6 @@ ul {
     overflow: hidden;
 }
 
-li {
-    float: left;
-}
-
 li a,
 .dropbtn {
     display: inline-block;
@@ -53,10 +49,6 @@ li a:hover,
 
 li.dropdown {
     display: inline-block;
-}
-
-nav > ul {
-    float: right;
 }
 
 .dropdown-content {
@@ -133,9 +125,6 @@ nav > ul {
         padding: 0;
         overflow: hidden;
     }
-    li {
-        float: left;
-    }
     li a,
     .dropbtn {
         display: inline-block;
@@ -150,9 +139,6 @@ nav > ul {
     }
     li.dropdown {
         display: inline-block;
-    }
-    nav > ul {
-        float: right;
     }
     .dropdown-content {
         display: none;
@@ -182,6 +168,12 @@ nav > ul {
     .lg-50 {
         width: 50%;
         clear: right;
+    }
+    nav > ul {
+        float: right;
+    }
+    li {
+        float: left;
     }
     /*.row {
         clear: both;
