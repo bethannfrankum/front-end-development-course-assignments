@@ -94,8 +94,8 @@ li .drop-down {
     display: none;
 }
 
-.row {
-    margin: 5px auto;
+.hero .col {
+    height: 200px;
 }
 
 
@@ -145,11 +145,15 @@ li .drop-down {
     .md-100 {
         width: 100%;
     }
+    nav ul li {
+        display: inline-block;
+    }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+        display: inline-block;
     }
     li a,
     .dropbtn {
