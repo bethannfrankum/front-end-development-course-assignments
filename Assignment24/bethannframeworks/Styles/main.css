@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #558C89;
+    background-color: #57bc90;
     overflow: hidden;
 }
 
@@ -85,13 +85,17 @@ li .drop-down {
 }
 
 .drop-down .drop-down-content,
-.drop-down-content2 {
+.drop-down .drop-down-content2 {
     display: none;
-    background: #a00;
+    background: #015249;
 }
 
 .mobile-collapse {
     display: none;
+}
+
+.row {
+    margin: 5px auto;
 }
 
 
@@ -117,6 +121,7 @@ li .drop-down {
     }
     .col {
         float: left;
+        margin: 5px auto;
     }
     .md-33 {
         width: 33.33333333333%
@@ -134,7 +139,8 @@ li .drop-down {
         width: 75%;
     }
     .hero {
-        width: 100%
+        width: 100%;
+        margin: 5px auto;
     }
     .md-100 {
         width: 100%;
@@ -154,29 +160,37 @@ li .drop-down {
         text-decoration: none;
     }
     li a:hover,
-    .dropdown:hover .dropbtn {
+    .drop-down:hover .dropbtn {
         background-color: #333;
     }
     li.dropdown {
         display: inline-block;
     }
-    .dropdown-content {
+    .drop-down-content,
+    .drop-down-content2 {
         display: none;
         position: absolute;
         background-color: #D9853B;
         min-width: 160px;
     }
-    .dropdown-content a {
+    .drop-down-content a,
+    .drop-down-content2 a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
         text-align: left;
     }
-    .dropdown-content a:hover {
+    .drop-down-content a:hover {
         background-color: #f1f1f1
     }
-    .dropdown:hover .dropdown-content {
+    .drop-down-content2 a:hover {
+        background-color: #f1f1f1
+    }
+    .drop-down:hover .drop-down-content {
+        display: block;
+    }
+    .drop-down:hover .drop-down-content2 {
         display: block;
     }
     .logo button {
@@ -185,7 +199,8 @@ li .drop-down {
     .mobile-collapse {
         display: block !important;
     }
-    .drop-down .drop-down-content {
+    .drop-down .drop-down-content,
+    .drop-down .drop-down-content2 {
         position: absolute;
     }
 }
@@ -203,6 +218,12 @@ li .drop-down {
     }
     li {
         float: left;
+    }
+    .row {
+        margin: 5px auto;
+    }
+    .callOuts {
+        margin: 5px auto;
     }
     /*.row {
         clear: both;
