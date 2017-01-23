@@ -43,22 +43,22 @@ li a,
 }
 
 li a:hover,
-.dropdown:hover .dropbtn {
+.drop-down:hover .dropbtn {
     background-color: #333;
 }
 
-li.dropdown {
+li .drop-down {
     display: inline-block;
 }
 
-.dropdown-content {
+.drop-down-content {
     display: none;
     position: absolute;
     background-color: #D9853B;
     min-width: 160px;
 }
 
-.dropdown-content a {
+.drop-down-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -66,12 +66,21 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {
+.drop-down-content a:hover {
     background-color: #f1f1f1
 }
 
-.dropdown:hover .dropdown-content {
+.drop-down:hover .dropdown-content {
     display: block;
+}
+
+.drop-down .drop-down-content {
+    display: none;
+    background: #a00;
+}
+
+.mobile-collapse {
+    display: none;
 }
 
 
@@ -158,6 +167,15 @@ li.dropdown {
     }
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+    .logo button {
+        display: none;
+    }
+    .mobile-collapse {
+        display: block !important;
+    }
+    .drop-down .drop-down-content {
+        position: absolute;
     }
 }
 

@@ -12,17 +12,17 @@
     <header>
         <div class="row">
             <div class="cell col md-33">Logo</div>
-            <button class="toggle-nav"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <button class="mobile-collapse-toggle"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
+            <nav class="mobile-collapse">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Gallery</a></li>
-                    <li class="dropdown"> <a href="#" class="dropbtn">Inventory</a>
-                        <div class="dropdown-content"> <a href="#">Necklaces</a> <a href="#">Bracelets</a> <a href="#">Earrings</a> </div>
+                    <li class="drop-down"> <a href="#" class="dropbtn drop-down-toggle">Inventory</a>
+                        <div class="drop-down-content"> <a href="#">Necklaces</a> <a href="#">Bracelets</a> <a href="#">Earrings</a> </div>
                     </li>
-                    <li class="dropdown"> <a href="#" class="dropbtn">Custom Orders</a>
-                        <div class="dropdown-content"> <a href="#">Place Custom Order</a> <a href="#">Track Existing Custom Order</a> <a href="#">View Past Custom Orders</a> </div>
+                    <li class="drop-down"> <a href="#" class="dropbtn drop-down-toggle">Custom Orders</a>
+                        <div class="drop-down-content"> <a href="#">Place Custom Order</a> <a href="#">Track Existing Custom Order</a> <a href="#">View Past Custom Orders</a> </div>
                     </li>
                 </ul>
             </nav>
@@ -47,6 +47,8 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="bethannframeworks/scripts/main.js"></script>
 </body>
 
 </html>
