@@ -207,8 +207,8 @@ li .drop-down {
     .drop-down .drop-down-content2 {
         position: absolute;
     }
-    section .features .row {
-        margin: 5px auto;
+    .test {
+        margin: 10px;
     }
 }
 
