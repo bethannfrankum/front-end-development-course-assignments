@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     text-align: center;
 }
@@ -197,7 +197,7 @@ li .drop-down {
     .drop-down:hover .drop-down-content2 {
         display: block;
     }
-    .logo button {
+    button {
         display: none;
     }
     .mobile-collapse {
@@ -206,6 +206,9 @@ li .drop-down {
     .drop-down .drop-down-content,
     .drop-down .drop-down-content2 {
         position: absolute;
+    }
+    section .features .row {
+        margin: 5px auto;
     }
 }
 
