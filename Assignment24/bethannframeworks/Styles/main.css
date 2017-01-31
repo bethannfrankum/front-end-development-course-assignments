@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -11,6 +11,18 @@ body {
 .cell {
     border: 1px solid black;
     background: lightgrey;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* Removed the whole "feature" class text align and pin pointed the elements */
+
+.cell h1,
+.cell h2,
+.cell h3,
+.cell p {
+    text-align: left;
 }
 
 .features {
@@ -25,6 +37,12 @@ header {
 .logo {
     margin-top: 4px;
 }
+
+
+/* Chris */
+
+
+/* End Chris */
 
 ul {
     list-style-type: none;
@@ -116,8 +134,7 @@ li .drop-down {
 
 @media screen and (min-width:768px) {
     .row {
-        clear: both;
-        overflow: hidden;
+        padding: 5px;
     }
     .col {
         float: left;
@@ -142,7 +159,9 @@ li .drop-down {
         width: 100%;
         margin: 5px auto;
     }
+    /* Your floats should be with these rather than colums and rows. Again it's about specifics. You don't want to float the whole page, only small blocks of a page. */
     .md-100 {
+        float: left;
         width: 100%;
     }
     nav ul li {
@@ -215,13 +234,12 @@ li .drop-down {
 @media screen and (min-width:992px) {
     .lg-25 {
         width: 25%;
-        height: 200px;
-        margin: 2px auto;
     }
+    /* When you add margins using floats in one place you have to adjust the child elements that are directly effected. Therefore since we wanted some space between our cells we had to reduce the width just a little bit. */
     .lg-50 {
-        width: 50%;
+        width: 49%;
         clear: right;
-        height: 100%;
+        float: left;
     }
     nav > ul {
         float: right;
@@ -232,10 +250,7 @@ li .drop-down {
     .row {
         margin: 5px auto;
     }
-    .featuretwoandthree {
-        margin-top: -5px;
-    }
-    /* .callOuts {
+    .callOuts {
         margin: 5px auto;
     }
     /*.row {
