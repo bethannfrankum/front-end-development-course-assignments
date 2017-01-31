@@ -215,10 +215,13 @@ li .drop-down {
 @media screen and (min-width:992px) {
     .lg-25 {
         width: 25%;
+        height: 200px;
+        margin: 2px auto;
     }
     .lg-50 {
         width: 50%;
         clear: right;
+        height: 100%;
     }
     nav > ul {
         float: right;
@@ -229,7 +232,10 @@ li .drop-down {
     .row {
         margin: 5px auto;
     }
-    .callOuts {
+    .featuretwoandthree {
+        margin-top: -5px;
+    }
+    /* .callOuts {
         margin: 5px auto;
     }
     /*.row {
